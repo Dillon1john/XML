@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function calculate() {
+            //read inputs
+            var loan = document.getElementById("amount").value; var term = document.getElementById("rateList").value;
+            var key = "407e1cb94f6f62bab9d53725f5336d62";
+            var url = "https://api.stlouisfed.org/fred/series/observations?series_id=MORTGAGE" + term + "US&realtime_end=9999-12-1&api_key=" + key + "&file_type=json&callback=?";
+            //use ajax to get the response from the url, create object of class XMLHttpRequest() //it depends on the browser
+            if (window.XMLHttpRequest) var agentAjax = new XMLHttpRequest();
+            else var agentAjax = new ActiveXObject("Microsoft.XMLHTTP"); //for IE only
+            //open communication to the server (URL) agentAjax.open("GET",url,true); agentAjax.send(null);
+            //checking the communication agentAjax.onreadystatechange = function() {
+            if (agentAjax.readyState == 4 && agentAjax.status == 200) {
+                var jsonResponse = agentAjax.responseText;
+                var jsonobject = JSON.parse(jsonResponse);
+                var responseLength = jsonobject.observations.length;
+                var responsecount = jsonobject.count;
+                var interest = jsonobject.observations[responseLength - 1].value;
+                //call function to calculate monthly payments on the loan
+                //problem arise if trying to do it outside onreadystatechange function //due to asynchronocity of the communication call "agenAjax.open()" calcInterest(interest,term,loan);
+            }
+        }
+//end of function calculate()
+        function calcInterest(interest, term, loan) {
+            var monthlyInterest = interest / 1200;
+            var monthTerm = term * 12;
+            var factor = Math.pow((1 + monthlyInterest), monthTerm);
+            var numerator = loan * monthlyInterest * factor; var denominator = factor - 1;
+            var monthPayment = numerator / denominator;
+            var nf = Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 });
+            //displaying results at the output placeholder document.getElementById("showoutput").innerHTML = "Loan: " + nf.format(loan) + "<br/>" +
+        } </script>
+</head>
+
+<body>
+    "Term(years): " + term + "<br />" +
+    "Interest Rate(% yearly): " + interest +"<br />"+ "<p>Monthly Payment: " + nf.format(monthPayment);
+    <h2>Mortgage Refinance Calculator</h2>
+    <h3>Calculate your monthly payments</h3>
+    <p></p>
+    <table border="12">
+        <tr>
+            <td>
+                Loan<br />
+                <input type="number" autofocus id="amount" />
+            </td>
+            <td>&nbsp;&nbsp;</td>
+            <td>
+                Term (years): <br /> <select id="rateList">
+                    <option value="30" selected>30-year fixed</option>
+                    <option value="15">15-year fixed</option>
+                    <option value="10">10-year fixed</option>
+                </select> </td>
+            <td>&nbsp;&nbsp;</td>
+            <td><button id="button" onclick="calculate()">Calculate</button></td>
+        </tr>
+    </table>
+    <p></p>
+    <div id="showoutput"></div>
+</body>
+
+</html>

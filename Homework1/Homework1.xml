@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Homework1.xsl" ?> <!-- root(/) -->
+<car_dealership>
+    
+    <car>
+        <make>Ford</make>
+        <model>Mustang</model>
+        <year>2019</year>
+        <pic>
+            <img src="mustang2019.jpeg" />
+        </pic>
+    </car>
+    <car>
+        <make>GM</make>
+        <model>
+            Buick
+            <br />
+            Encore
+        </model>
+        <year>2022</year>
+        <pic>
+            <img src="gmbuickencore2022.png" />
+        </pic>
+    </car>
+    <car>
+        <make>GM</make>
+        <model>Silverado</model>
+        <year>2022</year>
+        <pic>
+            <img src="gmsilverado2022.jpeg" />
+        </pic>
+    </car>
+
+    <car>
+        <make>Toyota</make>
+        <model>
+            Land
+            <br />
+            Cruiser
+        </model>
+        <year>2019</year>
+        <pic>
+            <img src="toyotalandcruiser2019.jpeg" />
+        </pic>
+    </car>
+
+</car_dealership>

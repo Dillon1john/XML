@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"> function runjQuery() {
+            //read search input
+            var inputSearch = $("#searchTxtBx").val();
+            $.ajax({
+                //setup the parameters
+                url: "final.php", data: "searchKey=" + inputSearch, success: function (serverdata) {
+                    $("#showresults").html(serverdata);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Oscar Movies Search By Movie, Year, Director</h2>
+    <p></p>
+    <input type="text" placeholder="Search" autofocus id="searchTxtBx" onkeyup="runjQuery()" />
+    <p></p>
+    <input type="submit" value="Go"/> </form>
+    <div id="showresults"></div>
+</body>
+
+</html>

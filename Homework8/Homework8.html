@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- download jQuery from a CDN(Content Delivery Network): Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"> function runjQuery() {
+            jQuery.ajax({
+                //set the parameters
+                url: "Hwk8.php",
+                success: function (serverdata) {
+                    jQuery("#showlist").html(serverdata);
+                }
+            });
+        }//end of function runjQuery()
+        function playvideo() {
+            //read select value
+            var selectValue = $("#videoList").val();
+            if (selectValue != "") {
+                //create a video tag (<video>)
+                var vid = document.createElement('video');
+                //attributes of video tag, source can eithe be a physical file or a video //from the Internet (URL)
+                vid.src = selectValue;
+                vid.controls = true;
+                vid.height = 400; vid.width = 400;
+                //set the video to play vid.play();
+                //playing video at the placeholder
+                $("#playvideo").html(vid);
+            }
+            else alert("Please select a video");
+        } </script>
+</head>
+
+<body onload="runjQuery()">
+    <h2>Video Player</h2>
+    <p></p>
+    <span id="showlist"></span>
+    <p></p>
+    <div id="playvideo" />
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Homework3.xsl" ?> <!-- root(/) -->
+<historical_figures>
+
+     <hf>
+         <Name>Abraham Lincoln</Name>
+         <Nationality>USA</Nationality>
+         <Profession>Politician</Profession>
+         <Picture><img src="Abraham-Lincoln.jpeg"/> </Picture>
+
+
+    </hf>
+
+    <hf>
+        <Name>Benito Juarez</Name>
+        <Nationality>Mexico</Nationality>
+        <Profession>Politician</Profession>
+        <Picture><img src="Benito_Juarez.jpeg"/> </Picture>
+
+
+   </hf>
+
+
+   <hf>
+    <Name>Claude Monet</Name>
+    <Nationality>France</Nationality>
+    <Profession>Politician</Profession>
+    <Picture><img src="Claude_Monet.jpeg"/> </Picture>
+
+
+    </hf>
+
+    <hf>
+        <Name>Charles Darwin</Name>
+        <Nationality>England</Nationality>
+        <Profession>Scientist</Profession>
+        <Picture><img src="Charles_Darwin.jpeg"/> </Picture>
+
+
+    </hf>
+
+    <hf>
+        <Name>Deng Xiaoping</Name>
+        <Nationality>China</Nationality>
+        <Profession>Politician</Profession>
+        <Picture><img src="Deng_Xiaoping.jpeg"/> </Picture>
+
+
+    </hf>
+    <hf>
+        <Name>Frederick Chopin</Name>
+        <Nationality>Poland</Nationality>
+        <Profession>Musician</Profession>
+        <Picture><img src="Frederic_Chopin.jpeg"/> </Picture>
+
+
+    </hf>
+
+    <hf>
+        <Name>George Washington Carver</Name>
+        <Nationality>USA</Nationality>
+        <Profession>Scientist</Profession>
+        <Picture><img src="George_Washington_Carver.jpeg"/> </Picture>
+
+
+    </hf>
+
+    <hf>
+        <Name>Georgia O’Keeffe</Name>
+        <Nationality>USA</Nationality>
+        <Profession>Writer</Profession>
+        <Picture><img src="Georgia_OKeeffe.jpeg"/> </Picture>
+
+    </hf>
+
+    <hf>
+        <Name>Mahatma Gandhi</Name>
+        <Nationality>India</Nationality>
+        <Profession>Politician</Profession>
+        <Picture><img src="Mahatma_Gandhi.jpeg"/> </Picture>
+
+    </hf>
+    <hf>
+        <Name>Mark Twain</Name>
+        <Nationality>USA</Nationality>
+        <Profession>Writer</Profession>
+        <Picture><img src="Mark_Twain.jpeg"/> </Picture>
+
+    </hf>
+
+    <hf>
+        <Name>Muhammad Jinnah</Name>
+        <Nationality>Pakistan</Nationality>
+        <Profession>Politician</Profession>
+        <Picture><img src="Muhammad_Ali_Jinnah.jpeg"/> </Picture>
+
+    </hf>
+
+    <hf>
+        <Name>Pablo Picasso</Name>
+        <Nationality>Spain</Nationality>
+        <Profession>Painter</Profession>
+        <Picture><img src="Pablo_Picasso.jpeg"/> </Picture>
+
+    </hf>
+ 
+    <hf>
+        <Name>Santos Dumont</Name>
+        <Nationality>Brazil</Nationality>
+        <Profession>Scientist</Profession>
+        <Picture><img src="Santos-Dumont.jpeg"/> </Picture>
+
+    </hf>
+
+
+</historical_figures>
+        
+
+    
+        

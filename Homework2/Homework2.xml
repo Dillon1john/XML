@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Homework2.xsl"?> 
+<!-- root(/) -->
+<furnitures>
+    <furniture>
+      <Piece_Type>Bar Cabinet</Piece_Type>
+      <Units>5</Units>
+      <Mass_lbs>109</Mass_lbs>
+      <Material_Type>Dark Brown Oak</Material_Type>
+      <Dimensions_LWH>18x63x39</Dimensions_LWH>
+      <Price>288</Price>
+      <Picture>bar_cabinet.jpeg</Picture>
+    </furniture>
+    <furniture>
+      <Piece_Type>Wall-Mount Shelf</Piece_Type>
+      <Units>12</Units>
+      <Mass_lbs>14</Mass_lbs>
+      <Material_Type>Wall-Mount Bookshelf - Industrial Pipe Style with Wood Veneer Floating Shelves</Material_Type>
+      <Dimensions_LWH>31x12x23</Dimensions_LWH>
+      <Price>87</Price>
+      <Picture>wallmount_shelf.jpeg</Picture>
+    </furniture>
+    <furniture>
+      <Piece_Type>Clipboard Shelf</Piece_Type>
+      <Units>9</Units>
+      <Mass_lbs>8</Mass_lbs>
+      <Material_Type>Wooden Mallet&apos;s Ten Pocket Chart Holding Wall File Pockets</Material_Type>
+      <Dimensions_LWH>48x14x12</Dimensions_LWH>
+      <Price>101</Price>
+      <Picture>clipboard_shelf.jpeg</Picture>
+    </furniture>
+    <furniture>
+      <Piece_Type>Central Table</Piece_Type>
+      <Units>11</Units>
+      <Mass_lbs>11</Mass_lbs>
+      <Material_Type> Strong metal frame, this console table with drawers features enhanced stability.</Material_Type>
+      <Dimensions_LWH>39x11x32</Dimensions_LWH>
+      <Price>170</Price>
+      <Picture>central_table.jpeg</Picture>
+    </furniture>
+    <furniture>
+      <Piece_Type>Bed</Piece_Type>
+      <Units>15</Units>
+      <Mass_lbs>180</Mass_lbs>
+      <Material_Type>Solid wood frame and the headboard has foam filling covered in the velvety upholstery</Material_Type>
+      <Dimensions_LWH>81x43x54</Dimensions_LWH>
+      <Price>170</Price>
+      <Picture>darkbrown_bed.jpeg</Picture>
+    </furniture>
+  </furnitures>
